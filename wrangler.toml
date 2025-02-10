@@ -15,15 +15,15 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.tianhang.wang", custom_domain = true },
-#   { pattern = "quay.tianhang.wang", custom_domain = true },
-#   { pattern = "gcr.tianhang.wang", custom_domain = true },
-#   { pattern = "k8s-gcr.tianhang.wang", custom_domain = true },
-#   { pattern = "k8s.tianhang.wang", custom_domain = true },
-#   { pattern = "ghcr.tianhang.wang", custom_domain = true },
-#   { pattern = "cloudsmith.tianhang.wang", custom_domain = true },
-# ]
+ routes = [
+   { pattern = "docker.tianhang.wang", custom_domain = true },
+   { pattern = "quay.tianhang.wang", custom_domain = true },
+   { pattern = "gcr.tianhang.wang", custom_domain = true },
+   { pattern = "k8s-gcr.tianhang.wang", custom_domain = true },
+   { pattern = "k8s.tianhang.wang", custom_domain = true },
+   { pattern = "ghcr.tianhang.wang", custom_domain = true },
+   { pattern = "cloudsmith.tianhang.wang", custom_domain = true },
+ ]
 
 [env.production.vars]
 MODE = "production"
